@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+input, button {
+    margin: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 0, 255);
+}
+
