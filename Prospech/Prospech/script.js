@@ -28,6 +28,19 @@ tbPRG.onclick = function() {
 tbMAT.onclick = function() {
     dVystup.style.display = "none"; 
 }
+
+tbMAT.oninput = function(){
+    let mat = parseInt(tbMAT.value);
+    if (mat<1 || mat>5) {
+        msgMAT.classList.remove("invisible");
+        
+    }
+    else {
+        msgMAT.classList.add("invisible");
+
+    }
+}
+
 bVyhodnot.onclick = function() {
     let cjl = parseInt(tbCJL.value);    
     let mat = parseInt(tbMAT.value);
