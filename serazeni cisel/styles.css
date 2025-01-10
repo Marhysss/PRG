@@ -10,7 +10,7 @@ input, button {
 button {
     padding: 10px 20px;
     background-color: rgb(255, 0, 255);
-    color: white;
+    color: rgb(255, 0, 0);
     border: none;
     cursor: pointer;
 }
