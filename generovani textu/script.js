@@ -18,6 +18,9 @@ function generujVetu(pocetSlov) {
         veta += generujSlovo(pocetPismen) + " ";
         i++;
     }
+    veta = veta.trim();
+    veta = veta.charAt(0).toUpperCase() + veta.slice(1);
+    veta += ".";
     return veta;
 }
 
