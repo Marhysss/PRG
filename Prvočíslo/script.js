@@ -12,9 +12,20 @@ function jePrvocislo(number) {
     return true;
 }
 
-console.log(jePrvocislo(1)); // false
-console.log(jePrvocislo(2)); // true
-console.log(jePrvocislo(3)); // true
-console.log(jePrvocislo(4)); // false
-console.log(jePrvocislo(51)); // true
-console.log(jePrvocislo(17)); // false
+const tlacitko = document.querySelector('button');
+const vstup = document.querySelector('#cislo');
+const vysledek = document.querySelector('#vysledek');
+
+tlacitko.onclick = function() {
+    const cislo = Number(vstup.value);
+    if (isNaN(cislo)) {
+        vysledek.textContent = 'Zadejte číslo!';
+    } else {
+        if (jePrvocislo(cislo)) {
+            vysledek.textContent = `Číslo ${cislo} je prvočíslo.`;
+    } else {
+        vysledek.textContent = `Číslo ${cislo} není prvočíslo.`;
+    }
+
+    }
+}
