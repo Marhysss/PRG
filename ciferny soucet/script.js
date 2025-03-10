@@ -9,6 +9,16 @@ function digitSum(cislo) {
     return soucet;
 }
 
-console.log(digitSum(123)); // 6
-console.log(digitSum(1234)); // 10
-console.log(digitSum(12345)); // 15
+function isPalindrom(cislo) {
+    let numString = String(cislo);
+    for (let i = 0; i < Math.floor(numString.length / 2); i++) {
+        if (numString[i] !== numString[numString.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(isPalindrom(12321)); // true
+console.log(isPalindrom(12345)); // false
+console.log(isPalindrom(123321)); // true
